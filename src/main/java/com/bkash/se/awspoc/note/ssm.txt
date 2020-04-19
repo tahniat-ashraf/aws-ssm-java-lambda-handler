@@ -1,0 +1,7 @@
+0. set key in kms and define a IAM role as key user (eg - alias/test_priyam2; role - lambda-dynamo-sns-ssm)
+1. set key value pair (secure string )in aws system manager parameter store (/bkash/test/priyam). Define the
+previously created key as KMS key source
+2. the ec2/lambda must have the particular role which will be use the kms key to decrypt the ssm value
+
+https://docs.aws.amazon.com/kms/latest/developerguide/services-parameter-store.html
+
